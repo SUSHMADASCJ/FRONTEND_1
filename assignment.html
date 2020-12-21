@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ASSIGNMENT</title>
+    <style>
+        table,td{
+            border:3px solid black;
+            border-collapse:collapse;
+            width:100px;
+            height:100px;
+            font-family: fantasy;
+            
+        }
+        .effects
+        {
+            width:200px;
+        }
+        img{
+            width:600px;
+            height:200px;
+        }
+
+        #effects1
+        {
+            width:600px;
+            height:400px;
+        }
+        
+    </style>
+</head>
+<body>
+    <table class="effects">
+       <tr>
+           <th colspan="4">
+               <marquee>Understanding IFRAME,ROWSPAN and COLSPAN</marquee>
+           </th>
+       </tr>
+       <tr> 
+           <td colspan="2"><img src="birds.jpg" alt="birds"></td>
+           <td>
+           <iframe srcdoc="<a href=song.mp3 target=if1>click here to play audio</a>"></iframe>
+           </td>
+           <td>
+           <iframe name="if1"></iframe></td>
+           </td>
+        </tr>
+        <tr>
+            <td>
+                <iframe srcdoc="<a href=vedio.gif target=if2>click here to play vedio</a>"></iframe>
+                </td>
+                <td>
+                <iframe name="if2"></iframe></td>
+                </td>
+            <td rowspan="3" colspan="4">
+            <table id="effects1">
+                <tr>
+                    <td>text</td>
+                    <td>
+                    <iframe srcdoc="<a href=vedio.gif target=if5>image link</a>"></iframe>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>image link</td>
+                    <td>
+                        <iframe name="if5"></iframe></td>
+                        </td>
+                </tr>
+                
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <iframe srcdoc="<a href=birds.jpg target=if3>click here to see image</a>"></iframe>
+                </td>
+                <td>
+                <iframe name="if3"></iframe></td>
+                </td>
+        </tr>
+        <tr>
+            <td>
+                <iframe srcdoc="<a href=song.mp3 target=if4>click here to play audio</a>"></iframe>
+                </td>
+                <td>
+                <iframe name="if4"></iframe></td>
+                </td>
+        </tr>
+        </td>
+        
+        
+    </table>
+</body>
+</html>
